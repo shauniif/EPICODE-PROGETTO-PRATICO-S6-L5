@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Settings</title>
+    <!--CSS -->
+    <link
+      rel="stylesheet"
+      href="./bootstrap-5.3.3/bootstrap-5.3.3/scss/custom-bootsap.css"
+    />
+    <!-- ICON-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+  </head>
+  <body class="bg-bg-setting-color">
+    <header>
+      <!-- NAV BAR-->
+      <nav class="navbar navbar-expand-md text-bg-primary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="home.html">
+            <img
+              src="./Netflix-assets/assets/netflix_logo.png"
+              alt="Netflix_logo"
+              width="100"
+              height="44"
+            />
+          </a>
+          <button
+            class="navbar-toggler border border-light"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span> <i class="bi bi-list text-light"></i></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link active text-light"
+                  aria-current="page"
+                  href="#"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="#">TV Shows</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="#">Movies</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="#">Recently Added</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="#">My List</a>
+              </li>
+            </ul>
+            <ul class="nav navbar-nav flex-row ms-md-auto">
+              <li class="nav-item align-self-center">
+                <a href="#">
+                  <i class="bi bi-search text-light fs-3 me-3"></i>
+                </a>
+              </li>
+              <li class="nav-item align-self-center">
+                <a class="nav-link text-light me-3" href="#">
+                  <img
+                    src="./Netflix-assets/assets/kids_icon.png"
+                    width="50"
+                    height="50"
+                    alt="kids_icon"
+                  />
+                </a>
+              </li>
+              <li class="nav-item align-self-center">
+                <a class="me-3" href="#">
+                  <i class="bi bi-bell-fill text-light fs-3"></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="#">
+                  <img
+                    src="./Netflix-assets/assets/avatar.png"
+                    alt="Propic_User"
+                    width="50"
+                    height="50"
+                  />
+                </a>
+              </li>
+              <a
+                class="nav-link dropdown-toggle text-bg-primary"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+              </a>
+              <li class="nav-item dropdown align-self-center ms-0">
+                <ul class="dropdown-menu dropdown-menu-end">
+                  <li>
+                    <a class="dropdown-item" href="profile.html"
+                      >Modifca Profilo
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/settings.html">Account</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="container mt-5">
+        <div class="row">
+          <div
+            class="col border border-2 border-top-0 border-start-0 border-end-0 border-setting-color1"
+          >
+            <h1>Account</h1>
+          </div>
+        </div>
+        <div class="row mt-2 text-setting-color2">
+          <div class="col-lg-3">
+            <h4 class="text-uppercase fs-5">Membership & Billing</h4>
+            <button
+              type="button"
+              class="btn btn-setting-color1 border border-1 border-start-0 border-top-0 border-end-0 fs-6 px-4 py-1"
+            >
+              Cancel Membership
+            </button>
+          </div>
+          <div class="col-lg-9">
+            <div
+              class="row justify-content-between border border-1 border-start-0 border-end-0 border-top-0 border-setting-color1"
+            >
+              <div class="col-auto">
+                <p class="fw-bold text-primary m-0 p-0">
+                  student@strive.school
+                </p>
+                <p class="m-0 p-0 mt-1">Password: ********</p>
+                <p class="m-0 p-0 mt-1">Phone: 321 044 1279</p>
+              </div>
+              <div class="col-auto d-flex flex-column">
+                <a
+                  class="text-setting-color3 text-decoration-none text-end mt-1"
+                  href="#"
+                  >Change account email</a
+                >
+                <a
+                  class="text-setting-color3 text-decoration-none text-end mt-1"
+                  href="#"
+                  >Change password</a
+                >
+                <a
+                  class="text-setting-color3 text-decoration-none mb-3 text-end mt-1"
+                  href="#"
+                  >Change phone number</a
+                >
+              </div>
+            </div>
+            <div
+              class="row justify-content-between mt-2 border border-1 border-start-0 border-end-0 border-top-0 border-setting-color1"
+            >
+              <div class="col-auto d-flex">
+                <i class="bi bi-paypal text-primary fs-6"></i>
+                <p class="fst-italic text-primary ms-1">PayPal</p>
+                <p class="fw-bold text-primary ms-3">admin@strive.school</p>
+              </div>
+              <div class="col-auto d-flex flex-column">
+                <a
+                  class="text-setting-color3 text-decoration-none text-end mt-1"
+                  href="#"
+                  >Update payment info</a
+                >
+                <a
+                  class="text-setting-color3 text-decoration-none text-end mb-3 mt-1"
+                  href="#"
+                  >Billing details</a
+                >
+              </div>
+            </div>
+            <div class="row justify-content-end">
+              <div class="col-auto d-flex flex-column">
+                <a
+                  class="text-setting-color3 text-decoration-none text-end mt-1"
+                  href="#"
+                  >Redeem gift card or promo code</a
+                >
+                <a
+                  class="text-setting-color3 text-decoration-none text-end mb-3 mt-1"
+                  href="#"
+                  >Where to buy gift cards</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="row mt-2 border border-1 border-start-0 border-end-0 border-setting-color1"
+        >
+          <div class="col-lg-3 mt-2">
+            <h4 class="text-uppercase fs-5 text-setting-color2">
+              Plan Details
+            </h4>
+          </div>
+          <div class="col-lg-9 mt-2">
+            <div class="row justify-content-between">
+              <div class="col-auto d-flex">
+                <p class="fw-bold text-uppercase">Premium</p>
+                <p
+                  class="fw-bold text-uppercase lead fs-6 ms-1 border border-1 border-primary px-1 ls"
+                >
+                  Ultra HD
+                </p>
+              </div>
+              <div class="col-auto d-flex flex-column">
+                <a
+                  class="text-setting-color3 text-decoration-none text-end mb-3 mt-1"
+                  href="#"
+                  >Change plan</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="row border border-1 border-start-0 border-top-0 border-end-0 border-setting-color1"
+        >
+          <div class="col-lg-3 mt-2">
+            <h4 class="text-uppercase fs-5 text-setting-color2">Settings</h4>
+          </div>
+          <div class="col-lg-9 mt-2">
+            <div class="row">
+              <div class="col-auto d-flex flex-column">
+                <a
+                  class="text-setting-color3 text-decoration-none mb-2"
+                  href="#"
+                  >Parental controls</a
+                >
+                <a
+                  class="text-setting-color3 text-decoration-none mb-2"
+                  href="#"
+                  >Test participation
+                </a>
+                <a
+                  class="text-setting-color3 text-decoration-none mb-2"
+                  href="#"
+                  >Manage download devices</a
+                >
+                <a
+                  class="text-setting-color3 text-decoration-none mb-2"
+                  href="#"
+                >
+                  Activate a device</a
+                >
+                <a
+                  class="text-setting-color3 text-decoration-none mb-2"
+                  href="#"
+                  >Recent device streaming activity</a
+                >
+                <a
+                  class="text-setting-color3 text-decoration-none mb-3"
+                  href="#"
+                  >Sign out of all devices</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-2">
+          <div class="col-lg-3 mt-2">
+            <h4 class="text-uppercase fs-5 text-setting-color2">My Profile</h4>
+          </div>
+          <div class="col-lg-9 mt-2">
+            <div class="row justify-content-between">
+              <div class="col-auto d-flex">
+                <img
+                  src="./Netflix-assets/assets/avatar.png"
+                  class="img-fluid"
+                  width="50"
+                  height="50"
+                  alt="Propic_User"
+                />
+                <p class="fw-bold ms-2 align-self-end">Strive Student</p>
+              </div>
+              <div class="col-auto d-flex flex-column">
+                <a
+                  class="text-setting-color3 text-decoration-none text-end"
+                  href="/profile.html"
+                  >Manage profiles</a
+                >
+                <a
+                  class="text-setting-color3 text-decoration-none text-end"
+                  href="#"
+                >
+                  Add profile email</a
+                >
+              </div>
+              <ul class="row mt-3 list-unstyled row-cols-1 row-cols-lg-2">
+                <li class="col">
+                  <a class="text-setting-color3 text-decoration-none" href="#"
+                    >Language</a
+                  >
+                </li>
+                <li class="col">
+                  <a class="text-setting-color3 text-decoration-none" href="#"
+                    >Viewing activity
+                  </a>
+                </li>
+                <li class="col">
+                  <a class="text-setting-color3 text-decoration-none" href="#"
+                    >Playback settings</a
+                  >
+                </li>
+                <li class="col">
+                  <a class="text-setting-color3 text-decoration-none" href="#"
+                    >Ratings</a
+                  >
+                </li>
+                <li class="col">
+                  <a class="text-setting-color3 text-decoration-none" href="#"
+                    >Subtitle appearance
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="border border-1 p-2 border-start-0 border-end-0"></footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

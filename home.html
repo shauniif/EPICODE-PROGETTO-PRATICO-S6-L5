@@ -1,0 +1,1433 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS -->
+    <link
+      rel="stylesheet"
+      href="./bootstrap-5.3.3/bootstrap-5.3.3/scss/custom-bootsap.css"
+    />
+    <!-- ICON-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
+    <title>Netflix Clone</title>
+  </head>
+  <body class="text-bg-primary">
+    <header>
+      <!-- NAV BAR-->
+      <nav class="navbar navbar-expand-md text-bg-primary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img
+              src="./Netflix-assets/assets/netflix_logo.png"
+              alt="Netflix_logo"
+              width="100"
+              height="44"
+            />
+          </a>
+          <button
+            class="navbar-toggler border border-light"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span> <i class="bi bi-list text-light"></i></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link active text-light"
+                  aria-current="page"
+                  href="#"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="#">TV Shows</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="#">Movies</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="#">Recently Added</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="#">My List</a>
+              </li>
+            </ul>
+            <ul class="nav navbar-nav flex-row ms-md-auto">
+              <li class="nav-item align-self-center">
+                <a href="#">
+                  <i class="bi bi-search text-light fs-3 me-3"></i>
+                </a>
+              </li>
+              <li class="nav-item align-self-center">
+                <a class="nav-link me-3" href="#">
+                  <img
+                    src="./Netflix-assets/assets/kids_icon.png"
+                    width="50"
+                    height="50"
+                    alt="kids_icon"
+                  />
+                </a>
+              </li>
+              <li class="nav-item align-self-center">
+                <a class="me-3" href="#">
+                  <i class="bi bi-bell-fill text-light fs-3"></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="#">
+                  <img
+                    src="./Netflix-assets/assets/avatar.png"
+                    width="50"
+                    height="50"
+                    alt="Propic_User"
+                  />
+                </a>
+              </li>
+              <a
+                class="nav-link dropdown-toggle text-bg-primary"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+              </a>
+              <li class="nav-item dropdown align-self-center ms-0">
+                <ul class="dropdown-menu dropdown-menu-end">
+                  <li>
+                    <a class="dropdown-item" href="profile.html"
+                      >Modifca Profilo
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/settings.html">Account</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="container-fluid">
+        <div class="row justify-content-between">
+          <div class="col-auto d-flex ms-2">
+            <h2>TV Shows</h2>
+            <div
+              class="d-flex justify-content-between align-self-center border border-secondary border-1 ms-5 px-2 pt-2"
+            >
+              <p class="h5">Genres</p>
+              <i class="bi bi-caret-down-fill ms-3 align-self-center"></i>
+            </div>
+          </div>
+          <div
+            class="d-none d-lg-inline-block col-lg-auto d-lg-flex flew-lg-row text-end me-4"
+          >
+            <div
+              class="border border-secondary border-1 align-self-center px-2 py-1"
+            >
+              <i class="bi bi-text-left"></i>
+            </div>
+            <div
+              class="border border-secondary border-1 align-self-center px-2 py-1"
+            >
+              <i class="bi bi-grid-fill"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- TRENDING NOW MOBILE -->
+      <div class="container d-md-none">
+        <div class="row">
+          <div class="col">
+            <h2 class="ms-1">Trending Now</h2>
+          </div>
+        </div>
+
+        <div id="carousel1mo" class="carousel slide text-center mt-2">
+          <div class="carousel-inner">
+            <div class="row">
+              <div class="col">
+                <div class="carousel-item active">
+                  <img
+                    src="./Netflix-assets/assets/media/media0.webp"
+                    class="img-fluid scaleimg"
+                    alt="Sherlock_Cover"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="./Netflix-assets/assets/media/media1.jpg"
+                    class="img-fluid"
+                    alt="American Factory_Cover"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="./Netflix-assets/assets/media/media2.webp"
+                    class="img-fluid"
+                    alt="The Good Place_Cover"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <div class="position-relative scaleimg">
+                    <img
+                      src="./Netflix-assets/assets/media/media4.jpg"
+                      class="img-fluid"
+                      alt="Cuba_Cameraman_Cover"
+                    />
+                    <span
+                      class="badge text-bg-danger text-uppercase fs-5 position-absolute bposition"
+                      >New Episodes</span
+                    >
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="./Netflix-assets/assets/media/media5.webp"
+                    class="img-fluid"
+                    alt="The China Hustle_Cover"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="./Netflix-assets/assets/media/media6.jpg"
+                    class="img-fluid"
+                    alt="The social Dilemma_Cover"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="./Netflix-assets/assets/media/media7.webp"
+                    class="img-fluid"
+                    alt="AROG_Cover"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="./Netflix-assets/assets/media/media8.webp"
+                    class="img-fluid"
+                    alt="Yashsi Bati_Cover"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <div class="position-relative">
+                    <img
+                      src="./Netflix-assets/assets/media/media9.jpg"
+                      class="img-fluid"
+                      alt="Connected_Cover"
+                    />
+                    <span
+                      class="badge text-bg-danger text-uppercase fs-5 position-absolute bposition"
+                      >New Episodes</span
+                    >
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="./Netflix-assets/assets/media/media10.jpg"
+                    class="img-fluid"
+                    alt="Spy_Cover"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="./Netflix-assets/assets/media/media11.jpg"
+                    class="img-fluid"
+                    alt="The College Admission Scandal_Cover"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="./Netflix-assets/assets/media/media12.jpg"
+                    class="img-fluid"
+                    alt="Tribes of Europa_Cover"
+                  />
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carousel1mo"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carousel1mo"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--WATCH IT AGAIN MOBILE -->
+      <div class="container d-md-none">
+        <div class="row">
+          <div class="col">
+            <h2 class="ms-1 mt-3">Watch it Again</h2>
+          </div>
+        </div>
+
+        <div id="carousel2mo" class="carousel slide text-center mt-2">
+          <div class="carousel-inner">
+            <div class="row">
+              <div class="col">
+                <div class="carousel-item active">
+                  <img
+                    src="./Netflix-assets/assets/media/media13.jpg"
+                    class="img-fluid"
+                    alt="Narcos_Cover"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="./Netflix-assets/assets/media/media14.webp"
+                    class="img-fluid"
+                    alt="BrBa_Cover"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="./Netflix-assets/assets/media/media15.jpg"
+                    class="img-fluid"
+                    alt="Explained_Cover"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="./Netflix-assets/assets/media/media16.webp"
+                    class="img-fluid"
+                    alt="RickMorty_Cover"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="./Netflix-assets/assets/media/media17.jpg"
+                    class="img-fluid"
+                    alt="Academy Awards Winner-The White Helmets_Cover"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="./Netflix-assets/assets/media/media18.jpg"
+                    class="img-fluid"
+                    alt="SpyCraft_Cover"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="./Netflix-assets/assets/media/media20.jpg"
+                    class="img-fluid"
+                    alt="Insight Bill's Brain Decoding Bill Gates_Cover"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="./Netflix-assets/assets/media/media21.webp"
+                    class="img-fluid"
+                    alt="Vikings_Cover"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="./Netflix-assets/assets/media/media22.webp"
+                    class="img-fluid"
+                    alt="HIMYM_Cover"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="./Netflix-assets/assets/media/media23.webp"
+                    class="img-fluid"
+                    alt="DreamBig Engineering Our World_Cover"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="./Netflix-assets/assets/media/media24.jpg"
+                    class="img-fluid"
+                    alt="Our Planet_Cover"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="./Netflix-assets/assets/media/media25.webp"
+                    class="img-fluid"
+                    alt="Modern Family_Cover"
+                  />
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carousel2mo"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carousel2mo"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--NEW RELEASES MOBILE-->
+      <div class="container d-md-none">
+        <div class="row">
+          <div class="col">
+            <h2 class="ms-1 mt-3">New Releases</h2>
+          </div>
+        </div>
+
+        <div id="carousel3mo" class="carousel slide text-center mt-2">
+          <div class="carousel-inner">
+            <div class="row">
+              <div class="col">
+                <div class="carousel-item active">
+                  <img
+                    src="./Netflix-assets/assets/media/media19.webp"
+                    class="img-fluid"
+                    alt="BCS_Cover"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="./Netflix-assets/assets/media/media26.webp"
+                    class="img-fluid"
+                    alt="LeylaAndMecnun_Cover"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <div class="position-relative">
+                    <img
+                      src="./Netflix-assets/assets/media/media27.jpg"
+                      class="img-fluid"
+                      alt="History101_Cover"
+                    />
+                    <span
+                      class="badge text-bg-danger text-uppercase fs-5 position-absolute bposition"
+                      >New Episodes</span
+                    >
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="./Netflix-assets/assets/media/media28.jpg"
+                    class="img-fluid"
+                    alt="Peaky Blinders_Cover"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="./Netflix-assets/assets/media/media29.jpg"
+                    class="img-fluid"
+                    alt="MyOctopusTeacher_Cover"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="./Netflix-assets/assets/media/media30.jpg"
+                    class="img-fluid"
+                    alt="MagicForHumans_Cover"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="./Netflix-assets/assets/media/media31.webp"
+                    class="img-fluid"
+                    alt="TheMostUnknown_Cover"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="./Netflix-assets/assets/media/media32.jpg"
+                    class="img-fluid"
+                    alt="The Last Dance_Cover"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <div class="position-relative">
+                    <img
+                      src="./Netflix-assets/assets/media/media4.jpg"
+                      class="img-fluid"
+                      alt="Cuba_Cameraman_Cover"
+                    />
+                    <span
+                      class="badge text-bg-danger text-uppercase fs-5 position-absolute bposition"
+                      >New Episodes</span
+                    >
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="./Netflix-assets/assets/media/media3.webp"
+                    class="img-fluid"
+                    alt="TheGeniusOfTheWorld"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="./Netflix-assets/assets/media/media12.jpg"
+                    class="img-fluid"
+                    alt="Tribes of Europa_Cover"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <div class="position-relative">
+                    <img
+                      src="./Netflix-assets/assets/media/media9.jpg"
+                      class="img-fluid"
+                      alt="Connected_Cover"
+                    />
+                    <span
+                      class="badge text-bg-danger text-uppercase fs-5 position-absolute bposition"
+                      >New Episodes</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carousel3mo"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carousel3mo"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- TRENDING NOW TABLET -->
+      <div
+        id="carousel1ta"
+        class="carousel slide d-none d-md-block d-lg-none mt-lg-5"
+      >
+        <div class="carousel-inner">
+          <h2 class="ms-md-3">Trending Now</h2>
+          <div class="carousel-item active ms-3">
+            <div class="row row-cols-2">
+              <div class="col">
+                <img
+                  src="./Netflix-assets/assets/media/media0.webp"
+                  class="img-fluid"
+                  alt="Sherlock_Cover"
+                />
+              </div>
+              <div class="col">
+                <img
+                  src="./Netflix-assets/assets/media/media1.jpg"
+                  class="img-fluid"
+                  alt="American Factory_Cover"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item ms-3">
+            <div class="row row-cols-2">
+              <div class="col">
+                <img
+                  src="./Netflix-assets/assets/media/media2.webp"
+                  class="img-fluid"
+                  alt="The Good Place_Cover"
+                />
+              </div>
+              <div class="col">
+                <div class="position-relative">
+                  <img
+                    src="./Netflix-assets/assets/media/media4.jpg"
+                    class="img-fluid"
+                    alt="Cuba_Cameraman_Cover"
+                  />
+                  <span
+                    class="badge text-bg-danger text-uppercase fs-5 position-absolute bpositiont"
+                    >New Episodes</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item ms-3">
+            <div class="row row-cols-2">
+              <div class="col">
+                <img
+                  src="./Netflix-assets/assets/media/media5.webp"
+                  class="img-fluid"
+                  alt="The China Hustle_Cover"
+                />
+              </div>
+              <div class="col">
+                <img
+                  src="./Netflix-assets/assets/media/media6.jpg"
+                  class="img-fluid"
+                  alt="The social Dilemma_Cover"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item ms-3">
+            <div class="row row-cols-2">
+              <div class="col">
+                <img
+                  src="./Netflix-assets/assets/media/media7.webp"
+                  class="img-fluid"
+                  alt="AROG_Cover"
+                />
+              </div>
+              <div class="col">
+                <img
+                  src="./Netflix-assets/assets/media/media8.webp"
+                  class="img-fluid"
+                  alt="Yashsi Bati_Cover"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item ms-3">
+            <div class="row row-cols-2">
+              <div class="col">
+                <div class="position-relative">
+                  <img
+                    src="./Netflix-assets/assets/media/media9.jpg"
+                    class="img-fluid"
+                    alt="Connected_Cover"
+                  />
+                  <span
+                    class="badge text-bg-danger text-uppercase fs-5 position-absolute bpositiont"
+                    >New Episodes</span
+                  >
+                </div>
+              </div>
+              <div class="col">
+                <img
+                  src="./Netflix-assets/assets/media/media10.jpg"
+                  class="img-fluid"
+                  alt="Spy_Cover"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item ms-3">
+            <div class="row row-cols-2">
+              <div class="col">
+                <img
+                  src="./Netflix-assets/assets/media/media11.jpg"
+                  class="img-fluid"
+                  alt="The College Admission Scandal_Cover"
+                />
+              </div>
+              <div class="col">
+                <img
+                  src="./Netflix-assets/assets/media/media12.jpg"
+                  class="img-fluid"
+                  alt="Tribes of Europa_Cover"
+                />
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carousel1ta"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carousel1ta"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      <!--WATCH IT AGAIN TABLET -->
+      <div
+        id="carousel2ta"
+        class="carousel slide d-none d-md-inline d-lg-none m-lg-5"
+      >
+        <div class="carousel-inner">
+          <h2 class="ms-md-3 mt-md-2">Watch it Again</h2>
+          <div class="carousel-item active ms-3">
+            <div class="row row-cols-2">
+              <div class="col">
+                <img
+                  src="./Netflix-assets/assets/media/media13.jpg"
+                  class="img-fluid"
+                  alt="Narcos_Cover"
+                />
+              </div>
+              <div class="col">
+                <img
+                  src="./Netflix-assets/assets/media/media14.webp"
+                  class="img-fluid"
+                  alt="BrBa_Cover"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item ms-3">
+            <div class="row row-cols-2">
+              <div class="col">
+                <img
+                  src="./Netflix-assets/assets/media/media15.jpg"
+                  class="img-fluid"
+                  alt="Explained_Cover"
+                />
+              </div>
+              <div class="col">
+                <img
+                  src="./Netflix-assets/assets/media/media16.webp"
+                  class="img-fluid"
+                  alt="RickMorty_Cover"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item ms-3">
+            <div class="row row-cols-2">
+              <div class="col">
+                <img
+                  src="./Netflix-assets/assets/media/media17.jpg"
+                  class="img-fluid"
+                  alt="Academy Awards Winner-The White Helmets_Cover"
+                />
+              </div>
+              <div class="col">
+                <img
+                  src="./Netflix-assets/assets/media/media18.jpg"
+                  class="img-fluid"
+                  alt="SpyCraft_Cover"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item ms-3">
+            <div class="row row-cols-2">
+              <div class="col">
+                <img
+                  src="./Netflix-assets/assets/media/media20.jpg"
+                  class="img-fluid"
+                  alt="Insight Bill's Brain Decoding Bill Gates_Cover"
+                />
+              </div>
+              <div class="col">
+                <img
+                  src="./Netflix-assets/assets/media/media21.webp"
+                  class="img-fluid"
+                  alt="Vikings_Cover"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item ms-3">
+            <div class="row row-cols-2">
+              <div class="col">
+                <img
+                  src="./Netflix-assets/assets/media/media22.webp"
+                  class="img-fluid"
+                  alt="HIMYM_Cover"
+                />
+              </div>
+              <div class="col">
+                <img
+                  src="./Netflix-assets/assets/media/media23.webp"
+                  class="img-fluid"
+                  alt="DreamBig Engineering Our World_Cover"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item ms-3">
+            <div class="row row-cols-2">
+              <div class="col">
+                <img
+                  src="./Netflix-assets/assets/media/media24.jpg"
+                  class="img-fluid"
+                  alt="Our Planet_Cover"
+                />
+              </div>
+              <div class="col">
+                <img
+                  src="./Netflix-assets/assets/media/media25.webp"
+                  class="img-fluid"
+                  alt="Modern Family_Cover"
+                />
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carousel2ta"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carousel2ta"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      <!--NEW RELEASES TABLET -->
+
+      <div
+        id="carousel3ta"
+        class="carousel slide d-none d-md-inline d-lg-none gx-lg-3 m-lg-5"
+      >
+        <div class="carousel-inner">
+          <h2 class="ms-md-3 mt-md-2">New Relases</h2>
+          <div class="carousel-item active ms-3">
+            <div class="row row-cols-2">
+              <div class="col">
+                <img
+                  src="./Netflix-assets/assets/media/media19.webp"
+                  class="img-fluid"
+                  alt="BCS_Cover"
+                />
+              </div>
+              <div class="col">
+                <img
+                  src="./Netflix-assets/assets/media/media26.webp"
+                  class="img-fluid"
+                  alt="LeylaAndMecnun_Cover"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item ms-3">
+            <div class="row row-cols-2">
+              <div class="col">
+                <div class="position-relative">
+                  <img
+                    src="./Netflix-assets/assets/media/media27.jpg"
+                    class="img-fluid"
+                    alt="History101_Cover"
+                  />
+                  <span
+                    class="badge text-bg-danger text-uppercase fs-5 position-absolute bpositiont"
+                    >New Episodes</span
+                  >
+                </div>
+              </div>
+              <div class="col">
+                <img
+                  src="./Netflix-assets/assets/media/media28.jpg"
+                  class="img-fluid"
+                  alt="Peaky Blinders_Cover"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item ms-3">
+            <div class="row row-cols-2">
+              <div class="col">
+                <img
+                  src="./Netflix-assets/assets/media/media29.jpg"
+                  class="img-fluid"
+                  alt="MyOctopusTeacher_Cover"
+                />
+              </div>
+              <div class="col">
+                <img
+                  src="./Netflix-assets/assets/media/media30.jpg"
+                  class="img-fluid"
+                  alt="MagicForHumans_Cover"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item ms-3">
+            <div class="row row-cols-2">
+              <div class="col">
+                <img
+                  src="./Netflix-assets/assets/media/media31.webp"
+                  class="img-fluid"
+                  alt="TheMostUnknown_Cover"
+                />
+              </div>
+              <div class="col">
+                <img
+                  src="./Netflix-assets/assets/media/media32.jpg"
+                  class="img-fluid"
+                  alt="The Last Dance_Cover"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item ms-3">
+            <div class="row row-cols-2">
+              <div class="col">
+                <div class="position-relative">
+                  <img
+                    src="./Netflix-assets/assets/media/media4.jpg"
+                    class="img-fluid"
+                    alt="Cuba_Cameraman_Cover"
+                  />
+                  <span
+                    class="badge text-bg-danger text-uppercase fs-5 position-absolute bpositiont"
+                    >New Episodes</span
+                  >
+                </div>
+              </div>
+              <div class="col">
+                <img
+                  src="./Netflix-assets/assets/media/media3.webp"
+                  class="img-fluid"
+                  alt="TheGeniusOfTheWorld"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item ms-3">
+            <div class="row row-cols-2">
+              <div class="col">
+                <img
+                  src="./Netflix-assets/assets/media/media12.jpg"
+                  class="img-fluid"
+                  alt="Tribes of Europa_Cover"
+                />
+              </div>
+              <div class="col">
+                <div class="position-relative">
+                  <img
+                    src="./Netflix-assets/assets/media/media9.jpg"
+                    class="img-fluid"
+                    alt="Connected_Cover"
+                  />
+                  <span
+                    class="badge text-bg-danger text-uppercase fs-5 position-absolute bpositiont"
+                    >New Episodes</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carousel3ta"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carousel3ta"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      <!-- TRENDING NOW DESKTOP -->
+      <div
+        id="carousel1"
+        class="carousel slide d-none d-lg-inline gx-lg-3 mt-lg-5"
+      >
+        <div class="carousel-inner">
+          <h2 class="ms-lg-3 mb-lg-3">Trending Now</h2>
+          <div class="carousel-item active ms-3">
+            <div class="row row-cols-6">
+              <div class="col">
+                <img
+                  src="./Netflix-assets/assets/media/media0.webp"
+                  class="img-fluid"
+                  alt="Sherlock_Cover"
+                />
+              </div>
+              <div class="col">
+                <img
+                  src="./Netflix-assets/assets/media/media1.jpg"
+                  class="img-fluid"
+                  alt="American Factory_Cover"
+                />
+              </div>
+              <div class="col">
+                <img
+                  src="./Netflix-assets/assets/media/media2.webp"
+                  class="img-fluid"
+                  alt="The Good Place_Cover"
+                />
+              </div>
+              <div class="col">
+                <div class="position-relative">
+                  <img
+                    src="./Netflix-assets/assets/media/media4.jpg"
+                    class="img-fluid"
+                    alt="Cuba_Cameraman_Cover"
+                  />
+                  <span
+                    class="badge text-bg-danger text-uppercase fs-5 position-absolute bpositiond"
+                    >New Episodes</span
+                  >
+                </div>
+              </div>
+              <div class="col">
+                <img
+                  src="./Netflix-assets/assets/media/media5.webp"
+                  class="img-fluid"
+                  alt="The China Hustle_Cover"
+                />
+              </div>
+              <div class="col">
+                <img
+                  src="./Netflix-assets/assets/media/media6.jpg"
+                  class="img-fluid"
+                  alt="The social Dilemma_Cover"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item ms-3">
+            <div class="row row-cols-6">
+              <div class="col">
+                <img
+                  src="./Netflix-assets/assets/media/media7.webp"
+                  class="img-fluid"
+                  alt="AROG_Cover"
+                />
+              </div>
+              <div class="col">
+                <img
+                  src="./Netflix-assets/assets/media/media8.webp"
+                  class="img-fluid"
+                  alt="Yashsi Bati_Cover"
+                />
+              </div>
+              <div class="col">
+                <div class="position-relative">
+                  <img
+                    src="./Netflix-assets/assets/media/media9.jpg"
+                    class="img-fluid"
+                    alt="Connected_Cover"
+                  />
+                  <span
+                    class="badge text-bg-danger text-uppercase fs-5 position-absolute bpositiond"
+                    >New Episodes</span
+                  >
+                </div>
+              </div>
+              <div class="col">
+                <img
+                  src="./Netflix-assets/assets/media/media10.jpg"
+                  class="img-fluid"
+                  alt="Spy_Cover"
+                />
+              </div>
+              <div class="col">
+                <img
+                  src="./Netflix-assets/assets/media/media11.jpg"
+                  class="img-fluid"
+                  alt="The College Admission Scandal_Cover"
+                />
+              </div>
+              <div class="col">
+                <img
+                  src="./Netflix-assets/assets/media/media12.jpg"
+                  class="img-fluid"
+                  alt="Tribes of Europa_Cover"
+                />
+              </div>
+            </div>
+          </div>
+
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carousel1"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carousel1"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      <!--WATCH IT AGAIN DESKTOP -->
+      <div
+        id="carousel2"
+        class="carousel slide d-none d-lg-inline gx-lg-3 m-lg-5"
+      >
+        <div class="carousel-inner">
+          <h2 class="ms-lg-3 mb-lg-3">Watch it Again</h2>
+          <div class="carousel-item active ms-3">
+            <div class="row row-cols-6">
+              <div class="col">
+                <img
+                  src="./Netflix-assets/assets/media/media13.jpg"
+                  class="img-fluid"
+                  alt="Narcos_Cover"
+                />
+              </div>
+              <div class="col">
+                <img
+                  src="./Netflix-assets/assets/media/media14.webp"
+                  class="img-fluid"
+                  alt="BrBa_Cover"
+                />
+              </div>
+              <div class="col">
+                <img
+                  src="./Netflix-assets/assets/media/media15.jpg"
+                  class="img-fluid"
+                  alt="Explained_Cover"
+                />
+              </div>
+              <div class="col">
+                <img
+                  src="./Netflix-assets/assets/media/media16.webp"
+                  class="img-fluid"
+                  alt="RickMorty_Cover"
+                />
+              </div>
+              <div class="col">
+                <img
+                  src="./Netflix-assets/assets/media/media17.jpg"
+                  class="img-fluid"
+                  alt="Academy Awards Winner-The White Helmets_Cover"
+                />
+              </div>
+              <div class="col">
+                <img
+                  src="./Netflix-assets/assets/media/media18.jpg"
+                  class="img-fluid"
+                  alt="SpyCraft_Cover"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item ms-3">
+            <div class="row row-cols-6">
+              <div class="col">
+                <img
+                  src="./Netflix-assets/assets/media/media20.jpg"
+                  class="img-fluid"
+                  alt="Insight Bill's Brain Decoding Bill Gates_Cover"
+                />
+              </div>
+              <div class="col">
+                <img
+                  src="./Netflix-assets/assets/media/media21.webp"
+                  class="img-fluid"
+                  alt="Vikings_Cover"
+                />
+              </div>
+              <div class="col">
+                <img
+                  src="./Netflix-assets/assets/media/media22.webp"
+                  class="img-fluid"
+                  alt="HIMYM_Cover"
+                />
+              </div>
+              <div class="col">
+                <img
+                  src="./Netflix-assets/assets/media/media23.webp"
+                  class="img-fluid"
+                  alt="DreamBig Engineering Our World_Cover"
+                />
+              </div>
+              <div class="col">
+                <img
+                  src="./Netflix-assets/assets/media/media24.jpg"
+                  class="img-fluid"
+                  alt="Our Planet_Cover"
+                />
+              </div>
+              <div class="col">
+                <img
+                  src="./Netflix-assets/assets/media/media25.webp"
+                  class="img-fluid"
+                  alt="Modern Family_Cover"
+                />
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carousel2"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carousel2"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      <!-- NEW RELEASES DESKTOP -->
+      <div
+        id="carousel3"
+        class="carousel slide d-none d-lg-inline gx-lg-3 m-lg-5"
+      >
+        <div class="carousel-inner">
+          <h2 class="ms-lg-3 mb-lg-3">New Relases</h2>
+          <div class="carousel-item active ms-3">
+            <div class="row row-cols-6">
+              <div class="col">
+                <img
+                  src="./Netflix-assets/assets/media/media19.webp"
+                  class="img-fluid"
+                  alt="BCS_Cover"
+                />
+              </div>
+              <div class="col">
+                <img
+                  src="./Netflix-assets/assets/media/media26.webp"
+                  class="img-fluid"
+                  alt="LeylaAndMecnun_Cover"
+                />
+              </div>
+              <div class="col">
+                <div class="position-relative">
+                  <img
+                    src="./Netflix-assets/assets/media/media27.jpg"
+                    class="img-fluid"
+                    alt="History101_Cover"
+                  />
+                  <span
+                    class="badge text-bg-danger text-uppercase fs-5 position-absolute bpositiond"
+                    >New Episodes</span
+                  >
+                </div>
+              </div>
+              <div class="col">
+                <img
+                  src="./Netflix-assets/assets/media/media28.jpg"
+                  class="img-fluid"
+                  alt="Peaky Blinders_Cover"
+                />
+              </div>
+              <div class="col">
+                <img
+                  src="./Netflix-assets/assets/media/media29.jpg"
+                  class="img-fluid"
+                  alt="MyOctopusTeacher_Cover"
+                />
+              </div>
+              <div class="col">
+                <img
+                  src="./Netflix-assets/assets/media/media30.jpg"
+                  class="img-fluid"
+                  alt="MagicForHumans_Cover"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item ms-3">
+            <div class="row row-cols-6">
+              <div class="col">
+                <img
+                  src="./Netflix-assets/assets/media/media31.webp"
+                  class="img-fluid"
+                  alt="TheMostUnknown_Cover"
+                />
+              </div>
+              <div class="col">
+                <img
+                  src="./Netflix-assets/assets/media/media32.jpg"
+                  class="img-fluid"
+                  alt="The Last Dance_Cover"
+                />
+              </div>
+              <div class="col">
+                <div class="position-relative">
+                  <img
+                    src="./Netflix-assets/assets/media/media4.jpg"
+                    class="img-fluid"
+                    alt="Cuba_Cameraman_Cover"
+                  />
+                  <span
+                    class="badge text-bg-danger text-uppercase fs-5 position-absolute bpositiond"
+                    >New Episodes</span
+                  >
+                </div>
+              </div>
+              <div class="col">
+                <img
+                  src="./Netflix-assets/assets/media/media3.webp"
+                  class="img-fluid"
+                  alt="TheGeniusOfTheWorld"
+                />
+              </div>
+              <div class="col">
+                <img
+                  src="./Netflix-assets/assets/media/media12.jpg"
+                  class="img-fluid"
+                  alt="Tribes of Europa_Cover"
+                />
+              </div>
+              <div class="col">
+                <div class="position-absolute">
+                  <img
+                    src="./Netflix-assets/assets/media/media9.jpg"
+                    class="img-fluid"
+                    alt="Connected_Cover"
+                  />
+                  <span
+                    class="badge text-bg-danger text-uppercase fs-5 position-absolute bpositiond"
+                    >New Episodes</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carousel3"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carousel3"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </main>
+    <footer class="mt-5 text-secondary">
+      <div class="container">
+        <div class="row">
+          <div class="col ms-1 ms-lg-5 mb-1">
+            <span><i class="bi bi-facebook px-lg-3 fs-3"></i></span>
+            <span><i class="bi bi-instagram px-2 px-lg-3 fs-3"></i></span>
+            <span><i class="bi bi-twitter-x px-2 px-lg-3 fs-3"></i></span>
+            <span><i class="bi bi-youtube px-2 px-lg-3 fs-3"></i></span>
+          </div>
+        </div>
+        <ul
+          class="row ms-lg-5 row-cols-2 row-cols-md-3 row-cols-lg-4 list-unstyled gy-3"
+        >
+          <li class="col">Audio and Subtitles</li>
+          <li class="col">Media Center</li>
+          <li class="col">Privacy</li>
+          <li class="col">Contact Us</li>
+          <li class="col">Audio Description</li>
+          <li class="col">Investor Relations</li>
+          <li class="col">Legal Notices</li>
+          <li class="col">Help Center</li>
+          <li class="col">Jobs</li>
+          <li class="col">Cookie Preferences</li>
+          <li class="col">Gift Cards</li>
+          <li class="col">Terms of Use</li>
+          <li class="col">Corporate Information</li>
+        </ul>
+
+        <div class="row ms-lg-5 my-3">
+          <div class="col">
+            <button type="button" class="btn btn-outline-secondary">
+              Service Code
+            </button>
+          </div>
+        </div>
+
+        <div class="row ms-lg-5 mt-1">
+          <div class="col">
+            <p>
+              &copy; 1997 - <span id="year"></span> Netflix, Inc.
+              &#123;i-Od00fcda2fdf9c0de&#125;
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./Netflix-assets/assets/js/index.js"></script>
+  </body>
+</html>
