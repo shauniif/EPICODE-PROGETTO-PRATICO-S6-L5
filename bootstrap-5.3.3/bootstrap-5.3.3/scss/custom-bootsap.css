@@ -12474,4 +12474,23 @@ footer i, footer li, footer button {
 .bpositiond {
   left: 0;
   bottom: 0.3em;
+}
+
+input[type=checkbox] {
+  width: 2rem;
+  height: 2rem;
+  border: 1px solid rgb(247, 241, 241);
+  background-color: transparent;
+}
+input[type=checkbox]:checked {
+  background-color: transparent;
+  box-shadow: none;
+  border: 1px solid rgb(247, 241, 241);
+}
+input[type=checkbox]:focus {
+  background-color: transparent;
+  border-color: none;
+  box-shadow: none;
+  border: 1px solid rgb(247, 241, 241);
+  outline: none;
 }/*# sourceMappingURL=custom-bootsap.css.map */

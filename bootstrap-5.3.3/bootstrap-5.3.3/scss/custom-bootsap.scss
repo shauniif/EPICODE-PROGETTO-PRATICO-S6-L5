@@ -63,3 +63,25 @@ footer {
     left: 0;
     bottom: 0.3em;
  }
+
+
+ input[type="checkbox"] {
+   width: 2rem;
+   height: 2rem;
+   border: 1px solid rgb(247, 241, 241);
+   background-color: transparent;
+ 
+   &:checked {
+     background-color: transparent;
+     box-shadow: none;
+     border: 1px solid rgb(247, 241, 241);
+   }
+ 
+   &:focus {
+     background-color: transparent;
+     border-color: none;
+     box-shadow: none;
+     border: 1px solid rgb(247, 241, 241);
+     outline: none;
+   }
+ }
